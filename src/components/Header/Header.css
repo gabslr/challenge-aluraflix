@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #282c34;
+  }
+  
+  .logo {
+    color: #61dafb;
+    font-size: 1.5rem;
+  }
+  
+  nav button {
+    margin-left: 1rem;
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  

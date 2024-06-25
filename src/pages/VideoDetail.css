@@ -1,0 +1,33 @@
+.video-detail {
+  padding: 20px;
+}
+
+.video-detail h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.video-detail p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin-right: 5px;
+  color: blue;
+  text-decoration: none;
+}
+
+nav span {
+  color: gray;
+}

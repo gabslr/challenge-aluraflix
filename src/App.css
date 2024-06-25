@@ -1,0 +1,15 @@
+/* src/App.css */
+.App {
+  text-align: center;
+}
+
+.header,
+.footer {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.category-section {
+  margin: 20
+}

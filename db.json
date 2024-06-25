@@ -1,0 +1,28 @@
+{
+  "videos": [
+    {
+      "id": "316d",
+      "title": "Cuándo usar let, var y const?",
+      "category": "Frontend",
+      "videoUrl": "PztCEdIJITY",
+      "description": "",
+      "thumbnail": "https://img.youtube.com/vi/PztCEdIJITY/maxresdefault.jpg"
+    },
+    {
+      "id": "1c62",
+      "title": "Spring Framework. ¿Qué es ?",
+      "category": "Backend",
+      "videoUrl": "t-iqt1b2qqk",
+      "description": "",
+      "thumbnail": "https://img.youtube.com/vi/t-iqt1b2qqk/maxresdefault.jpg"
+    },
+    {
+      "id": "ed5d",
+      "title": "Softskills",
+      "category": "Innovación y Gestión",
+      "videoUrl": "vhwspfvI52k",
+      "description": "",
+      "thumbnail": "https://img.youtube.com/vi/vhwspfvI52k/maxresdefault.jpg"
+    }
+  ]
+}
