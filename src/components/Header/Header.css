@@ -29,10 +29,12 @@
     padding: 0.8rem 1rem;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    
   }
   
   nav button:hover {
     background-color: black; 
     border-color: #2271D1;
-    color: #2271D1; /* Cambia el color del texto al pasar el cursor */
+    color: #2271D1; 
+    box-shadow: 0 0 2px 2px #2271D1 ;
   }

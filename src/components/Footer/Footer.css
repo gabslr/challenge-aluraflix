@@ -3,5 +3,15 @@
     color: white;
     text-align: center;
     padding: 1rem;
+    box-shadow:   
+    0 -3px 3px 0 #2271D1,  /* Sombra superior */
+    -5px 0 5px -5px #2271D1,  /* Sombra izquierda */
+    5px 0 5px -5px #2271D1;   /* Sombra derecha */
+    
+    
+  }
+
+  .logo-image{
+    width: 100px;
   }
   

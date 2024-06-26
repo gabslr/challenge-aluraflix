@@ -1,8 +1,16 @@
+section {
+  box-shadow: 
+    0 -3px 3px 0 #2271D1,  /* Sombra superior */
+    -5px 0 5px -5px #2271D1,  /* Sombra izquierda */
+    5px 0 5px -5px #2271D1;   /* Sombra derecha */
+}
+
+
 .category-section {
   padding: 20px;
   background-color: rgb(32, 32, 32);
   align-items: center;
-  
+  box-shadow: none;
 }
 
 .category-title {

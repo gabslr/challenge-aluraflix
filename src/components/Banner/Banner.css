@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  position: relative; /* Añade posición relativa para el contenedor del banner */
+  position: relative;
 }
 
 .banner-background {
@@ -41,9 +41,9 @@
 .banner-text {
   flex: 1;
   margin-right: 20px;
-  text-align: left; /* Asegura que el texto se alinee a la izquierda */
-  padding: 10px; /* Añade padding para separar el texto del fondo */
-  border-radius: 8px; /* Añade bordes redondeados */
+  text-align: left; 
+  padding: 10px; 
+  border-radius: 8px; 
 }
 
 .banner-text h2.front {
@@ -69,5 +69,6 @@
 .banner-image img {
   width: 80%;
   height: auto;
-  border-radius: 8px; /* Opcional: para que coincida con el estilo de la sección */
+  border-radius: 13px;
+  box-shadow: 0 0 5px 5px #318bf8 ;
 }
