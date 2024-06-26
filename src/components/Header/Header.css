@@ -3,18 +3,24 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: #282c34;
+    background-color: #828282;
   }
   
   .logo {
     color: #61dafb;
     font-size: 1.5rem;
   }
+
+  .logo-image {
+    width: 150px;
+    height: auto;
+    margin-left: 20%;
+  }
   
   nav button {
     width: 120px;
     font-size: 0.7rem;
-    margin-left: 1rem;
+    margin-right: 20px;
     background-color: transparent ;
     color: white;
     border: 1px solid white;
