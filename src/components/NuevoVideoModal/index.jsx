@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './NuevoVideo.css';
 import axios from 'axios';
+import { v4 as uuidv4 } from 'uuid';
 
 function NuevoVideoModal({ isOpen, onClose, setVideos, videos }) {
   const [formData, setFormData] = useState({
@@ -65,19 +66,20 @@ function NuevoVideoModal({ isOpen, onClose, setVideos, videos }) {
 
     const newVideoData = {
       ...formData,
+      id: uuidv4(),
       videoUrl: youtubeVideoId,
       thumbnail: `https://img.youtube.com/vi/${youtubeVideoId}/maxresdefault.jpg`,
     };
 
     try {
       const response = await axios.post('http://localhost:5000/videos', newVideoData);
-      const newVideo = response.data;
+      const createdVideo = response.data;
       const updatedVideos = { ...videos };
-      const categoryKey = newVideo.category.toLowerCase().replace(/\s/g, 'YGestion');
+      const categoryKey = createdVideo.category.toLowerCase();
       if (!updatedVideos[categoryKey]) {
         updatedVideos[categoryKey] = [];
       }
-      updatedVideos[categoryKey] = [...updatedVideos[categoryKey], newVideo];
+      updatedVideos[categoryKey] = [...updatedVideos[categoryKey], createdVideo];
       setVideos(updatedVideos);
       setFormData({
         title: '',
@@ -85,7 +87,7 @@ function NuevoVideoModal({ isOpen, onClose, setVideos, videos }) {
         videoUrl: '',
         description: '',
       });
-      onClose(); // Close the modal after saving
+      onClose();
     } catch (error) {
       console.error('Error creating video:', error);
     }
@@ -136,9 +138,9 @@ function NuevoVideoModal({ isOpen, onClose, setVideos, videos }) {
                 placeholder="Seleccione una categoría"
               >
                 <option value="">Seleccione una categoría</option>
-                <option value="Frontend">Frontend</option>
-                <option value="Backend">Backend</option>
-                <option value="Innovación y Gestión">Innovación y Gestión</option>
+                <option value="frontend">Frontend</option>
+                <option value="backend">Backend</option>
+                <option value="innovacion">Innovación</option>
               </select>
               {errors.category && <div className="error">{errors.category}</div>}
             </label>
@@ -168,8 +170,8 @@ function NuevoVideoModal({ isOpen, onClose, setVideos, videos }) {
             </label>
           </div>
           <div className="form-buttons">
-            <button type="button" onClick={handleSave}>GUARDAR</button>
-            <button type="reset" onClick={handleClear}>LIMPIAR</button>
+            <button type="button" onClick={handleSave}>Guardar</button>
+            <button type="reset" onClick={handleClear}>Limpiar</button>
           </div>
         </form>
       </div>

@@ -1,28 +1,60 @@
 {
   "videos": [
     {
-      "id": "316d",
-      "title": "Cuándo usar let, var y const?",
-      "category": "Frontend",
+      "id": "1609f4e6-357a-4eef-b16c-87a13fa08869",
+      "title": "INNOVACION",
+      "category": "frontend",
+      "videoUrl": "GJfOSoaXk4s",
+      "description": "",
+      "thumbnail": "https://img.youtube.com/vi/GJfOSoaXk4s/maxresdefault.jpg"
+    },
+    {
+      "id": "f899821a-10e0-420b-b1da-a53a0d058421",
+      "title": "Javascript",
+      "category": "frontend",
       "videoUrl": "PztCEdIJITY",
       "description": "",
       "thumbnail": "https://img.youtube.com/vi/PztCEdIJITY/maxresdefault.jpg"
     },
     {
-      "id": "1c62",
-      "title": "Spring Framework. ¿Qué es ?",
-      "category": "Backend",
+      "id": "e10e5a9d-2f24-40e8-8bb2-bb294309b962",
+      "title": "SQL",
+      "category": "backend",
+      "videoUrl": "cLLKVd5CNLc",
+      "description": "",
+      "thumbnail": "https://img.youtube.com/vi/cLLKVd5CNLc/maxresdefault.jpg"
+    },
+    {
+      "id": "28369cb0-c226-460d-834d-256c9ce5c9d4",
+      "title": "Spring",
+      "category": "backend",
       "videoUrl": "t-iqt1b2qqk",
       "description": "",
       "thumbnail": "https://img.youtube.com/vi/t-iqt1b2qqk/maxresdefault.jpg"
     },
     {
-      "id": "dcfd",
-      "title": "JS",
-      "category": "Frontend",
-      "videoUrl": "GJfOSoaXk4s",
+      "id": "89afa7d4-13bd-4166-8e71-37237455bfdb",
+      "title": "Softskills",
+      "category": "innovación",
+      "videoUrl": "vhwspfvI52k",
       "description": "",
-      "thumbnail": "https://img.youtube.com/vi/GJfOSoaXk4s/maxresdefault.jpg"
+      "thumbnail": "https://img.youtube.com/vi/vhwspfvI52k/maxresdefault.jpg"
+    },
+    {
+      "id": "571a6600-d1ca-4cfe-9375-52d96ef50c97",
+      "title": "Skills",
+      "category": "Innovación",
+      "videoUrl": "YhR7Zp8NUzE",
+      "description": "",
+      "thumbnail": "https://img.youtube.com/vi/YhR7Zp8NUzE/maxresdefault.jpg"
+    },
+    {
+      "id": "29c68977-319c-4e3e-9b32-87b6bcc0fe9d",
+      "title": "Skills",
+      "category": "innovacion",
+      "videoUrl": "cLLKVd5CNLc",
+      "description": "",
+      "thumbnail": "https://img.youtube.com/vi/cLLKVd5CNLc/maxresdefault.jpg"
     }
   ]
 }

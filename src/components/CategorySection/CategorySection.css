@@ -33,7 +33,7 @@ section {
   background-color: rgb(25, 192, 80); 
 }
 
-.innovación-y-gestión {
+.innovacion {
   background-color: #FFBA05;
 }
 
@@ -68,7 +68,7 @@ section {
   box-shadow: 0 0 3px 3px green;
 }
 
-.video-card.innovación-y-gestión {
+.video-card.innovacion {
   box-shadow: 0 0 3px 3px orange; 
 }
 

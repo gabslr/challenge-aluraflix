@@ -4,7 +4,7 @@ import './Modal.css';
 function Modal({ isOpen, video, onClose, onSave }) {
   const [formData, setFormData] = useState({
     title: '',
-    category: 'Frontend',
+    category: 'frontend',
     thumbnail: '',
     videoUrl: '',
     description: '',
@@ -36,7 +36,7 @@ function Modal({ isOpen, video, onClose, onSave }) {
   const handleClear = () => {
     setFormData({
       title: '',
-      category: 'Frontend',
+      category: 'frontend',
       thumbnail: '',
       videoUrl: '',
       description: '',
@@ -46,7 +46,7 @@ function Modal({ isOpen, video, onClose, onSave }) {
   return (
     <div className="modal-overlay">
       <div className="modal">
-        <h2>EDITAR CARD:</h2>
+        <h2>Editar Video</h2>
         <button className="close-button" onClick={onClose}>X</button>
         <form>
           <label>
@@ -56,9 +56,9 @@ function Modal({ isOpen, video, onClose, onSave }) {
           <label>
             Categoría:
             <select name="category" value={formData.category} onChange={handleChange}>
-              <option value="Frontend">Frontend</option>
-              <option value="Backend">Backend</option>
-              <option value="Innovación y Gestión">Innovación y Gestión</option>
+              <option value="frontend">Frontend</option>
+              <option value="backend">Backend</option>
+              <option value="innovacion">Innovación</option>
             </select>
           </label>
           <label>
@@ -73,9 +73,9 @@ function Modal({ isOpen, video, onClose, onSave }) {
             Descripción:
             <textarea name="description" value={formData.description} onChange={handleChange}></textarea>
           </label>
-          <div className='botones'>
-          <button type="button" onClick={handleSave}>GUARDAR</button>
-          <button type="button" onClick={handleClear}>LIMPIAR</button>
+          <div className="form-buttons">
+            <button type="button" onClick={handleSave}>Guardar</button>
+            <button type="button" onClick={handleClear}>Limpiar</button>
           </div>
         </form>
       </div>
