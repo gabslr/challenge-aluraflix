@@ -3,9 +3,12 @@ import { Link } from 'react-router-dom';
 import './CategorySection.css';
 
 function CategorySection({ title, videos, onEdit, onDelete }) {
+  // Determine the class based on the title
+  const titleClass = title.replace(/\s+/g, '-').toLowerCase();
+
   return (
     <section className="category-section">
-      <h2>{title}</h2>
+      <h2 className={`category-title ${titleClass}`}>{title}</h2>
       <div className="videos">
         {videos.map(video => (
           <div key={video.id} className="video-card">
