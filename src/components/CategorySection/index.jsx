@@ -11,7 +11,7 @@ function CategorySection({ title, videos, onEdit, onDelete }) {
       <h2 className={`category-title ${titleClass}`}>{title}</h2>
       <div className="videos">
         {videos.map(video => (
-          <div key={video.id} className="video-card">
+          <div key={video.id} className={`video-card ${titleClass}`}>
             <Link to={`/video/${video.id}`}>
               <img src={video.thumbnail} alt={video.title} className="thumbnail" />
             </Link>

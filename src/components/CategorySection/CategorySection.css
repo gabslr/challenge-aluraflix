@@ -59,6 +59,20 @@ section {
   transform: scale(1.05);
 }
 
+.video-card.frontend {
+  
+  box-shadow: 0 0 3px 3px #6BD1FF ;
+}
+
+.video-card.backend {
+  box-shadow: 0 0 3px 3px green;
+}
+
+.video-card.innovación-y-gestión {
+  box-shadow: 0 0 3px 3px orange; 
+}
+
+
 .thumbnail {
   width: 100%;
   height: auto;
@@ -80,6 +94,8 @@ section {
   display: flex;
   align-items: center;
 }
+
+
 
 .video-actions button:hover {
   text-decoration: underline;
