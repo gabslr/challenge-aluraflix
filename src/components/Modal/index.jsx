@@ -43,9 +43,13 @@ function Modal({ isOpen, video, onClose, onSave }) {
     });
   };
 
+  const modalOverlayStyle = {
+    backgroundColor: '#03122F'
+  };
+
   return (
     <div className="modal-overlay">
-      <div className="modal">
+      <div className="modal" style={modalOverlayStyle}>
         <h2>Editar Video</h2>
         <button className="close-button" onClick={onClose}>X</button>
         <form>

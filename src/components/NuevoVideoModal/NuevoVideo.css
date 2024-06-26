@@ -12,7 +12,7 @@
 }
 
 .modal {
-  background: #121212;
+  
   color: #ffffff;
   padding: 20px;
   border-radius: 8px;
@@ -24,7 +24,7 @@
 
 .modal h2 {
   text-transform: uppercase;
-  background: none;
+  
   text-align: center;
   color: #ffffff;
   margin-bottom: 20px;
@@ -70,8 +70,7 @@
 .modal .form-group textarea {
   width: 100%;
   padding: 10px;
-  border-radius: 4px;
-  border: none;
+  box-shadow: 0 0 0px 0.5px #fbfbfb ;
   background-color: #1e1e1e;
   color: white;
 }
@@ -125,3 +124,4 @@
   color: #ff4d4f;
   margin-top: 5px;
 }
+
