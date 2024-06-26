@@ -46,7 +46,7 @@ function Modal({ isOpen, video, onClose, onSave }) {
   return (
     <div className="modal-overlay">
       <div className="modal">
-        <h2>Editar Card</h2>
+        <h2>EDITAR CARD:</h2>
         <button className="close-button" onClick={onClose}>X</button>
         <form>
           <label>
@@ -73,8 +73,10 @@ function Modal({ isOpen, video, onClose, onSave }) {
             Descripción:
             <textarea name="description" value={formData.description} onChange={handleChange}></textarea>
           </label>
-          <button type="button" onClick={handleSave}>Guardar</button>
-          <button type="button" onClick={handleClear}>Limpiar</button>
+          <div className='botones'>
+          <button type="button" onClick={handleSave}>GUARDAR</button>
+          <button type="button" onClick={handleClear}>LIMPIAR</button>
+          </div>
         </form>
       </div>
     </div>
