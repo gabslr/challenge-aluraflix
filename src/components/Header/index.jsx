@@ -7,8 +7,8 @@ function Header() {
     <header className="header">
       <div className="logo">ALURAFLIX</div>
       <nav>
-        <Link to="/"><button>Home</button></Link>
-        <Link to="/nuevo-video"><button>Nuevo Video</button></Link>
+        <Link to="/"><button>HOME</button></Link>
+        <Link to="/nuevo-video"><button>NUEVO VIDEO</button></Link>
       </nav>
     </header>
   );
