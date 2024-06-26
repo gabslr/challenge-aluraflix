@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import './NuevoVideo.css';
 import axios from 'axios';
 
-function NuevoVideo({ setVideos, videos }) {
+function NuevoVideoModal({ isOpen, onClose, setVideos, videos }) {
   const [formData, setFormData] = useState({
     title: '',
     category: '',
@@ -18,6 +16,8 @@ function NuevoVideo({ setVideos, videos }) {
     videoUrl: '',
     description: '',
   });
+
+  if (!isOpen) return null;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -85,6 +85,7 @@ function NuevoVideo({ setVideos, videos }) {
         videoUrl: '',
         description: '',
       });
+      onClose(); // Close the modal after saving
     } catch (error) {
       console.error('Error creating video:', error);
     }
@@ -106,10 +107,10 @@ function NuevoVideo({ setVideos, videos }) {
   };
 
   return (
-    <div>
-      <Header />
-      <main className="nuevo-video">
-        <h1>Nuevo Video</h1>
+    <div className="modal-overlay">
+      <div className="modal">
+        <h2>Nuevo Video</h2>
+        <button className="close-button" onClick={onClose}>X</button>
         <p>Complete el formulario para crear una nueva tarjeta de video</p>
         <form>
           <div className="form-group">
@@ -167,14 +168,13 @@ function NuevoVideo({ setVideos, videos }) {
             </label>
           </div>
           <div className="form-buttons">
-            <button type="button" onClick={handleSave}>Guardar</button>
-            <button type="reset" onClick={handleClear}>Limpiar</button>
+            <button type="button" onClick={handleSave}>GUARDAR</button>
+            <button type="reset" onClick={handleClear}>LIMPIAR</button>
           </div>
         </form>
-      </main>
-      <Footer />
+      </div>
     </div>
   );
 }
 
-export default NuevoVideo;
+export default NuevoVideoModal;

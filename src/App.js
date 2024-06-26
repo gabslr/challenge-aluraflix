@@ -5,7 +5,7 @@ import Banner from './components/Banner';
 import CategorySection from './components/CategorySection';
 import Footer from './components/Footer';
 import Modal from './components/Modal';
-import NuevoVideo from './pages/NuevoVideo';
+import NuevoVideoModal from './components/NuevoVideoModal';
 import VideoDetail from './pages/VideoDetail';
 import './App.css';
 import axios from 'axios';
@@ -18,6 +18,7 @@ function App() {
   });
 
   const [modal, setModal] = useState({ isOpen: false, video: null });
+  const [nuevoVideoOpen, setNuevoVideoOpen] = useState(false);
 
   useEffect(() => {
     const fetchVideos = async () => {
@@ -46,6 +47,7 @@ function App() {
 
   const handleClose = () => {
     setModal({ isOpen: false, video: null });
+    setNuevoVideoOpen(false);
   };
 
   const handleSave = async (updatedVideo) => {
@@ -80,10 +82,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/nuevo-video" element={<NuevoVideo setVideos={setVideos} videos={videos} />} />
         <Route path="/" element={
           <div className="App">
-            <Header />
+            <Header onNuevoVideoClick={() => setNuevoVideoOpen(true)} />
             <Banner />
             <CategorySection
               title="Frontend"
@@ -109,6 +110,12 @@ function App() {
               video={modal.video}
               onClose={handleClose}
               onSave={handleSave}
+            />
+            <NuevoVideoModal
+              isOpen={nuevoVideoOpen}
+              onClose={handleClose}
+              setVideos={setVideos}
+              videos={videos}
             />
           </div>
         } />
