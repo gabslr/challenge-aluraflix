@@ -1,3 +1,11 @@
+Este proyecto utiliza localhost:5000 para la visualización de los videos.
+
+En package.json correr npm run server.
+
+Esto ejecutará json-server usando el archivo db.json y lo hará accesible en  http://localhost:5000
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
